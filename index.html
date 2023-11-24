@@ -18,6 +18,25 @@
             <a class="item">Teaching</a>
             <button class="header_button">Free Masterclasses</button>
         </div>
+        <div class="nav_mobile">
+        <label for="checkbox_mobile" class="nav_bar_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="30px">
+                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+        </label>
+        <input type="checkbox" hidden class="nav_input" id="checkbox_mobile">
+        <label for="checkbox_mobile" class="nav_overlay"></label>
+        <div class="header_mobile_content">
+            <label for="checkbox_mobile" class="nav_mobile_close">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+            </label>
+            <a class="item_mobile">Programs</a>
+            <a class="item_mobile">Reviews</a>
+            <a class="item_mobile">Features</a>
+            <a class="item_mobile">Teaching</a>
+            <button class="header_mobile_button">Free Masterclasses</button>
+        </div>
+    </div>
     </header>
     <section>
         <div class="section1">
@@ -37,13 +56,14 @@
         </div>
         <div class="section1_img">
             <img src="./image/imgp2.png" alt="anh1" class="img_elipse">
-            <img src="./image/Ellipse 9.png" alt="Ellipse">
         </div>
     </div>
     </section>
     <section>
         <div class="section2">
-            <p class="text_section2">100+ Successful Alumni working at top product-Based company</p>
+            <div class="text_section2">
+                <p>100+ Successful Alumni working at top product-Based company</p>
+            </div>
             <img src="./image/img_section2.png" alt="img_app">
         </div>
     </section>
@@ -53,6 +73,7 @@
                 <span class="title_text_section3">Our Programs</span>
                 <p class="text_title_section3">Ace Your Skills In Problem Solving In DSA, System Design And Developement</p>
             </div>
+            <div>
                 <div class="for_table_top">
                     <img src="./image/forCollage.png" alt="">
                     <span class="title_for_table">For Collage Students</span>
@@ -65,6 +86,46 @@
                     <p class="text_for_table">Who wish to shift to top product based companies and ace thier tech careers</p>
                     <button>View program <img src="./image/entypo_arrow-long-right.png"></button>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section4">
+            <div class="section4_title">
+                <span>Get inspired by someone like you</span>
+                <p>Who is now living their dream at top-tech companies</p>
+            </div>
+            <div class="section4_comment">
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">1 / 3</div> -->
+                    <img src="./image/comment.png" >
+                    <!-- <div class="text">Caption Text</div> -->
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <!-- <div class="numbertext">2 / 3</div> -->
+                    <img src="./image/comment.png">
+                    <!-- <div class="text">Caption Two</div> -->
+                  </div>
+                  
+                  <div class="mySlides fade">
+                    <!-- <div class="numbertext">3 / 3</div> -->
+                    <img src="./image/comment.png">
+                    <!-- <div class="text">Caption Three</div> -->
+                  </div>
+                    <a class="prev" onclick="plusSlides(-1)"><img src="./image/left arrow.png" alt=""></a>
+                    <a class="next" onclick="plusSlides(1)"><img src="./image/right arrow.png" alt=""></a>
+
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div>
+            </div>
+            <button class="section4_button">READ MORE REVIEWS</button>
         </div>
     </section>
     <section>

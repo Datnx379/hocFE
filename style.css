@@ -206,6 +206,48 @@ header{
 .for_table_bottom button img{
     margin-left: 28px;
 }
+
+.section4{
+    display: flex;
+    flex-direction: column;
+}
+.section4_button {
+    border-radius: 10px;
+    border: 1px solid #004AAD;
+    background: #FFF;
+    width: 515px;
+    height: 78px;
+    color: #004AAD;
+    font-family: Inter;
+    font-size: 34.35px;
+    /* font-style: normal; */
+    font-weight: 600;
+    /* line-height: normal; */
+    /* text-transform: capitalize; */
+
+}
+.section4_title{
+    text-align: center;
+}
+.section4_title span{
+    color: #000;
+    font-family: Inter;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.section4_title p {
+    color: #000;
+    font-family: Inter;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.section4_comment {
+    display: flex;
+}
 .section5{
     text-align: center;
 }
@@ -312,13 +354,19 @@ text-transform: capitalize;
    margin-left: 110px;
 }
 .section6_content_block_detail{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 23px;
     width: 339px;
-height: 418px;
-flex-shrink: 0;
-border: 1px solid #004AAD;
-background: #FFF;
-box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.30);
+    height: 418px;
+    flex-shrink: 0;
+    border: 1px solid #004AAD;
+    background: #FFF;
+    box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.30);
+}
+.section6_content_block_detail p {
+    width: 282px;
 }
 .section6_content_block span {
     color: #000;
@@ -343,10 +391,11 @@ box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.30);
 
 footer {
     display: flex;
+    justify-content: center;
 }
 .footer_left {
-    margin-top: 87px;
-    margin-left: 88px;
+    flex: 3;
+    padding: 87px 0 0 88px;
     height: 650px;
 }
 .footer_left p {
@@ -361,8 +410,8 @@ footer {
 }
 
 .footer_right {
-    margin-left: 213px;
-    margin-top: 123px;
+    flex: 1;
+    align-items: center;
 }
 
 .footer_right span {
@@ -381,7 +430,140 @@ footer {
     /* line-height: normal; */
     text-transform: capitalize;
     /* height: 86px; */
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
+/* mobile */
+.nav_mobile {
+    display: none;
+}
+.nav_bar_btn {
+    width: 28px;
+    height: 28px;
+    color: black;
+    display: none;
+    display: flex;
+
+}
+
+.nav_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.30);
+    display: none;
+}
+.header_mobile_content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #FFF ;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: all linear 0.2s;
+}
+.item_mobile{
+    font-size: 1.5rem;
+}
+.nav_mobile_close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.nav_input:checked ~ .nav_overlay{
+    display: block;
+}
+.nav_input:checked ~ .header_mobile_content{
+    transform: translateX(0%);
+}
+@media only screen and (max-width: 1024px) {
+    .nav_mobile{
+        display: block;
+    }
+    .nav_bar_btn {
+        display: block;
+    }
+    .header_content {
+        display: none;
+    }
+    /* .checkbox_mobile{
+        width: 100%;
+    } */
+    header {
+        justify-content: space-between;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+    .text_section1 {
+        padding-left: 10%;
+        width: 100%;
+        height: 100%;
+    }
+  
+    .button_section1{
+        width: max-content;
+        margin:10px auto;
+    }
+    .text_center{
+        width: 100%;
+    }
+    .text_top {
+        margin: 0;
+        width: 100%;
+    }
+    /* .text_section1 ul li {
+        width: 50%;
+    } */
+    .section1_img img {
+        width: 100%;
+        position: relative;
+    }
+    .section2{
+        
+    }
+    .text_section2 {
+        font-size: 47px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .section3{
+
+    }
+    .text_title_section3{
+        width: 100%;
+        margin: 0;
+        font-size: 35px;
+    }
+    .title_section3 span {
+        font-size: 45px;
+    }
+    .title_section3 p {
+        font-size: 30px;
+    }
+    .section4 {
+        display: none;
+    }
+    .section5 {
+        display: none;
+    }
+    .section6 {
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+}
